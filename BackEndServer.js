@@ -41,7 +41,6 @@ http.createServer(async (req, res) =>{
     res.writeHead(200, headers);
     res.write(JSON.stringify(menu));
     res.end();
-}).listen(3500, ()=>{
-    console.log("BackEnd Server online");
+}).listen(process.env.PORT, ()=>{
+    console.log(`Server is online and is running on PORT ${process.env.PORT}`);
 });
-//await client.end();
