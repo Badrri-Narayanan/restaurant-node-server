@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BackEndServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node BackEndServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Badrri-Narayanan/restaurant-node-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Badrri-Narayanan/restaurant-node-server/issues"
+  },
+  "homepage": "https://github.com/Badrri-Narayanan/restaurant-node-server#readme",
+  "dependencies": {
+    "pg": "^8.3.3"
+  }
+}
