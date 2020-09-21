@@ -15,11 +15,10 @@ const headers = {
 http.createServer(async (req, res) =>{
     //A new connection to DB must be established every time.
     const client = new pg.Client({
-        user: 'postgres',
-        host: 'localhost',
-        database: 'hotel',
-        password: 'password123',
-        port: 5432,
+        connectionString : process.env.DATABASE_URL,
+        ssl: {
+            rejectUnauthorized: false,
+        },
     })
     client.connect();
     try {
